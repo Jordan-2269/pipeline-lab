@@ -8,4 +8,4 @@ def test_boundary_exactly_24_hours_is_free():
  assert cancellation_fee(24) == 0 # the boundary — where bugs hide
 def test_negative_hours_is_rejected():
  with pytest.raises(ValueError):
- cancellation_fee(-1)
+     cancellation_fee(-1)
